@@ -35,6 +35,10 @@ header {
   header {
     height: 68vh;
   }
+
+  .me {
+    left: 25%;
+  }
 }
 
 @media (max-width: $mobile-breakpoint) {
@@ -44,6 +48,10 @@ header {
 
   .scroll-down {
     display: none;
+  }
+
+  .me {
+    left: 2%;
   }
 }
 
