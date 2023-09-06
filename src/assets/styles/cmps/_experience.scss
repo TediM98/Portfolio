@@ -1,0 +1,68 @@
+.experience-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  .experience-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+  }
+
+  .experience-details {
+    display: flex;
+    gap: 1rem;
+
+    .experience-details-icon {
+      margin-top: 6px;
+      color: $clr-primary;
+    }
+  }
+}
+
+.experience-container > div {
+  background: $bgclr-variant;
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: transparent;
+    border-color: $clr-primary-variant;
+    cursor: default;
+    transition: $transition;
+  }
+
+  & h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: $clr-primary;
+  }
+}
+
+@media (max-width: $normal-breakpoint) {
+  .experience-container {
+    grid-template-columns: 1fr;
+
+    .experience-content {
+      padding: 1rem;
+    }
+  }
+
+  .experience-container > div {
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .experience-container {
+    gap: 1rem;
+  }
+
+  .experience-container > div {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+}

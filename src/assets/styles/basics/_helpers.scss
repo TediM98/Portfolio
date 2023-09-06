@@ -1,0 +1,51 @@
+.flex {
+  display: flex;
+
+  > *.full {
+    flex: 1;
+  }
+  &.column {
+    flex-direction: column;
+  }
+  &.justify-center {
+    justify-content: center;
+  }
+  &.align-center {
+    align-items: center;
+  }
+  &.justify-between {
+    justify-content: space-between;
+  }
+}
+
+.clean-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.text-light {
+  color: $clr-light;
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: $clr-primary;
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid $clr-primary;
+  transition: $transition;
+
+  &:hover {
+    background-color: $clr-white;
+    color: $bgclr;
+    border-color: transparent;
+  }
+}
+
+.btn-primary {
+  background: $clr-primary;
+  color: $bgclr;
+}

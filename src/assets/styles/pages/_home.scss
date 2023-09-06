@@ -1,0 +1,26 @@
+.container {
+  width: $container-width-lg;
+  margin: 0 auto;
+}
+
+//MEDIA QUERIES( MEDIUM DEVICES)
+@media (max-width: $normal-breakpoint) {
+  .container {
+    width: $container-width-md;
+  }
+
+  section {
+    margin-top: 6rem;
+  }
+}
+
+//MEDIA QUERIES( SMALL DEVICES)
+@media (max-width: $mobile-breakpoint) {
+  .container {
+    width: $container-width-sm;
+  }
+
+  section > h2 {
+    margin-bottom: 2rem;
+  }
+}
