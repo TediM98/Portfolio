@@ -55,7 +55,7 @@ export function Contact() {
             <h4>WhatsApp</h4>
             <h5>0526056875</h5>
             <a
-              href="https://api.whatsapp.com/send?phone=0526056875"
+              href="https://api.whatsapp.com/send?phone=+0526056875"
               target="_blank"
             >
               Send a message
