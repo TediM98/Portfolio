@@ -9,7 +9,6 @@ export function Contact() {
 
   function sendEmail(ev) {
     ev.preventDefault()
-    ev.target.reset()
 
     emailjs
       .sendForm(
@@ -26,6 +25,7 @@ export function Contact() {
           console.log(error.text)
         }
       )
+    ev.target.reset()
   }
   return (
     <section id="contact">
